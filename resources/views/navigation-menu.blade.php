@@ -2,13 +2,13 @@
     <div class="p-4">Logo</div>
     <ul class="flex flex-col gap-4 py-10">
         <li class="px-4">
-            <a href="#">Dashboard</a>
+            <a href="{{route('dashboard')}}">Dashboard</a>
         </li>
         <li class="px-4">
             <a href="#">inventory</a>
         </li>
         <li class="px-4">
-            <a href="#">invoice</a>
+            <a href="{{route('invoice')}}">invoice</a>
         </li>
         <li class="px-4">
             <a href="#">delivery note</a>

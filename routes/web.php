@@ -14,4 +14,10 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+    Route::get('/invoice', function () {
+        return view('invoice');
+    })->name('invoice');
+    Route::get('/invoice/create', function () {
+        return null;
+    })->name('invoice/create');
 });

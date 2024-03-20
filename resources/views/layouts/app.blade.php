@@ -33,7 +33,7 @@
             @endif -->
 
             <!-- Page Content -->
-            <main>
+            <main class="flex w-full">
                 {{ $slot }}
             </main>
         </div>
