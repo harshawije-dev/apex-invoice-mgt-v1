@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\InvoiceController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -14,10 +16,9 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/invoice', function () {
-        return view('invoice');
-    })->name('invoice');
+    Route::get('/invoice', [InvoiceController::class, 'index'])->name('invoice');
     Route::get('/invoice/create', function () {
         return null;
     })->name('invoice/create');
 });
+

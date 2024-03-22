@@ -18,9 +18,9 @@
                         <div class="mb-3">
                             <x-label for="name" value="{{ __('Select Customer') }}" />
                             <select class="min-w-[400px]">
-                                <option value="value1">Customer One</option>
-                                <option value="value2">Customer Two</option>
-                                <option value="value2">Customer Three</option>
+                                @foreach($customers as $customer)
+                                <option value="{{ $customer->id }}">{{ $customer->display_name }}</option>
+                                @endforeach
                             </select>
                         </div>
                         <div class="mb-3">
